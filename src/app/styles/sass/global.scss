@@ -63,7 +63,6 @@ h6 {
   margin: 0;
 
   &--main-content {
-    border: 1px solid green;
     padding: 13rem 4rem;
     height: 100%;
     display: flex;
@@ -102,8 +101,59 @@ h6 {
 }
 
 .column {
-  border: 1px solid purple;
   &:first-of-type {
     margin-right: 4rem;
+  }
+}
+
+.contact-box {
+  display: flex;
+  background-color: $color-beige;
+  padding: 3rem 4rem 4rem 4rem;
+  border-radius: 20px;
+  max-width: 77.1rem;
+  &--element {
+    font-size: 3rem;
+    &:first-of-type {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    > h3 {
+      margin-bottom: 1.3rem;
+      font-size: 2.7rem;
+      font-weight: 600;
+      line-height: 130%;
+      letter-spacing: -0.5px;
+    }
+
+    > p {
+      font-size: 2rem;
+      line-height: 160%;
+      letter-spacing: 0.5px;
+    }
+  }
+  &--img {
+    position: relative;
+    width: 12.3rem;
+    height: 12.3rem;
+    margin-right: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    > .overlay {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(211, 211, 211, 0.1);
+    }
   }
 }
