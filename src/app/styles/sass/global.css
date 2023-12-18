@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Satoshi Variable';
+  src: url("/fonts/SatoshiVariable.woff2") format("woff2"), url("/fonts/SatoshiVariable.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -14,9 +22,15 @@ html {
 }
 
 body {
-  font-family: 'Satoshi Variable', sans-serif;
+  font-family: "Satoshi Variable", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 img,
@@ -51,14 +65,71 @@ h6 {
 }
 
 .wrapper {
-  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .wrapper--main-content {
   border: 1px solid green;
+  padding: 13rem 4rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .wrapper--footer {
-  border: 1px solid blue;
+  background: #000;
+  color: #fff;
+  padding: 4rem;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper--sidebar {
+  color: #1A0B32;
+  min-width: 31.2rem;
+  padding: 1rem 0;
+}
+
+.wrapper--sidebar > h3 {
+  font-size: 3.7rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+}
+
+.wrapper--sidebar > .menu-element {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 160%;
+  /* 32px */
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #1A0B32;
+  cursor: pointer;
+}
+
+.column {
+  border: 1px solid purple;
+}
+
+.column:first-of-type {
+  margin-right: 4rem;
 }
 /*# sourceMappingURL=global.css.map */

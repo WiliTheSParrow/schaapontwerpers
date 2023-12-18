@@ -1,3 +1,8 @@
+// Imports
+@import "breakpoints";
+@import "variables";
+@import "fonts";
+
 // CSS reser
 
 *,
@@ -10,13 +15,18 @@
 }
 html {
   //This defines what 1rem is.
-  font-size: 62.5%; //1 rem = 10px; 10px/16px=62.5%
+  font-size: 62.5%; // 1 rem = 10px; 10px/16px=62.5%
 }
 body {
-  font-family: 'Satoshi Variable', sans-serif;
+  font-family: "Satoshi Variable", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
+main {
+  flex: 1;
+}
+
 img,
 picture,
 video,
@@ -46,13 +56,54 @@ h6 {
 }
 
 .wrapper {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
 
   &--main-content {
     border: 1px solid green;
+    padding: 13rem 4rem;
+    height: 100%;
+    display: flex;
   }
 
   &--footer {
-    border: 1px solid blue;
+    background: $color-black;
+    color: $color-white;
+    padding: 4rem;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--sidebar {
+    color: $color-deep-purple;
+    min-width: 31.2rem;
+    padding: 1rem 0;
+    > h3 {
+      font-size: 3.7rem;
+      font-weight: 600;
+      line-height: 130%;
+      letter-spacing: -0.5px;
+      margin-bottom: 2rem;
+    }
+    > .menu-element {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 160%; /* 32px */
+      letter-spacing: 0.5px;
+      // text-decoration: underline;
+      border-bottom: 1px solid $color-deep-purple;
+      cursor: pointer;
+    }
+  }
+}
+
+.column {
+  border: 1px solid purple;
+  &:first-of-type {
+    margin-right: 4rem;
   }
 }
