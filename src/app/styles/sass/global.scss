@@ -1,0 +1,11 @@
+.wrapper {
+  border: 1px solid red;
+
+  &--main-content {
+    border: 1px solid green;
+  }
+
+  &--footer {
+    border: 1px solid blue;
+  }
+}

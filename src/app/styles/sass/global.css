@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=global.css.map */
+.wrapper {
+  border: 1px solid red;
+}
+
+.wrapper--main-content {
+  border: 1px solid green;
+}
+
+.wrapper--footer {
+  border: 1px solid blue;
+}
+/*# sourceMappingURL=global.css.map */
