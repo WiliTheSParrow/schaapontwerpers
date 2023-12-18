@@ -80,7 +80,7 @@ h6 {
 }
 
 .wrapper--main-content {
-  padding: 13rem 4rem;
+  padding: 12rem 4rem;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,10 +118,19 @@ h6 {
   font-size: 2rem;
   font-weight: 500;
   line-height: 160%;
-  /* 32px */
   letter-spacing: 0.5px;
   border-bottom: 1px solid #1A0B32;
   cursor: pointer;
+}
+
+.wrapper--mesia-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper--mesia-elements > svg:not(:last-of-type) {
+  margin-right: 2.6rem;
 }
 
 .column:first-of-type {
@@ -192,5 +201,30 @@ h6 {
   width: 100%;
   height: 100%;
   background: rgba(211, 211, 211, 0.1);
+}
+
+.footer--menu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.footer--menu > ul > li {
+  cursor: pointer;
+}
+
+.footer--menu > ul > li:not(:last-of-type) {
+  margin-right: 2.4rem;
+}
+
+.footer--menu > ul > li:hover {
+  text-decoration: underline;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=global.css.map */
